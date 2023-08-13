@@ -1,6 +1,6 @@
 .container{
     max-width: 500px;
-    margin: 12px auto;
+    margin: 12px auto; 
 }
 
 .calculator .display{
@@ -13,11 +13,12 @@
 }
 
 .calc-buttons{
-    width: 40px;
     height: 40px;
     flex: 1; 
+
 }
 
 .row{
     display: flex;
+    justify-content: space-between;
 }
