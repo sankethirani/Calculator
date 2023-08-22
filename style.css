@@ -12,7 +12,7 @@
     display: grid;
 }
 
-.calc-buttons{
+.calc-btns{
     height: 40px;
     flex: 1; 
 
@@ -21,4 +21,10 @@
 .row{
     display: flex;
     justify-content: space-between;
+}
+
+.calculator p {
+    min-height: 20px;
+    margin: 5px;
+    padding: 2px;
 }

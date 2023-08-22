@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <script src="script.js"></script>
+        <script defer src="script.js"></script>
         <link rel="stylesheet" href="style.css" />
         <title>Calculator</title>
     </head>
@@ -11,43 +11,76 @@
         <div class="container">
             <h1>Calculator</h1>
             <div class="calculator">
-                <div class="display">
+                <p id="top-screen"></p>
 
-                </div>
+                <p id="bottom-screen">0</p>
 
                 <div class="button-grid">
-                    <div class="row">
-                        <button data-key="ce" class="calc-buttons">CE</button>
-                        <button data-key="c" class="calc-buttons">C</button>
+                    <!-- <div class="row">
+                        <button data-key="ce" class="calc-buttons function-button" id="ce">CE</button>
+                        <button data-key="c" class="calc-buttons function-button">C</button>
                         <button data-key="+/-" class="calc-buttons">+/-</button>
-                        <button data-key="/" class="calc-buttons">/</button>
+                        <button data-key="/" class="calc-buttons operator-button">/</button>
                     </div>
 
                     <div class="row">
-                        <button data-key="7" class="calc-buttons">7</button>
-                        <button data-key="8" class="calc-buttons">8</button>
-                        <button data-key="9" class="calc-buttons">9</button>
-                        <button data-key="*" class="calc-buttons">X</button>
+                        <button data-key="7" class="calc-buttons calc-number">7</button>
+                        <button data-key="8" class="calc-buttons calc-number">8</button>
+                        <button data-key="9" class="calc-buttons calc-number">9</button>
+                        <button data-key="*" class="calc-buttons operator-button">X</button>
                     </div>
 
                     <div class="row">
-                        <button data-key="4" class="calc-buttons">4</button>
-                        <button data-key="5" class="calc-buttons">5</button>
-                        <button data-key="6" class="calc-buttons">6</button>
-                        <button data-key="-" class="calc-buttons">-</button>
+                        <button data-key="4" class="calc-buttons calc-number">4</button>
+                        <button data-key="5" class="calc-buttons calc-number">5</button>
+                        <button data-key="6" class="calc-buttons calc-number">6</button>
+                        <button data-key="-" class="calc-buttons operator operator-button">-</button>
                     </div>
 
                     <div class="row">
-                        <button data-key="1" class="calc-buttons">1</button>
-                        <button data-key="2" class="calc-buttons">2</button>
-                        <button data-key="3" class="calc-buttons">3</button>
-                        <button data-key="+" class="calc-buttons">+</button>
+                        <button data-key="1" class="calc-buttons calc-number">1</button>
+                        <button data-key="2" class="calc-buttons calc-number">2</button>
+                        <button data-key="3" class="calc-buttons calc-number">3</button>
+                        <button data-key="+" class="calc-buttons operator-button">+</button>
                     </div>
                     
                     <div class="row">
-                        <button data-key="0" class="calc-buttons">0</button>
+                        <button data-key="0" class="calc-buttons calc-number">0</button>
                         <button data-key="." class="calc-buttons">.</button>
                         <button data-key="=" class="calc-buttons">=</button>
+                    </div> -->
+
+                    <div class="row">
+                        <button class="calc-btns" id="delete-btn">CE</button>
+                        <button class="calc-btns" id="clear-btn">C</button>
+                    </div>
+
+                    <div class="row">
+                        <button class="calc-btns" data-number="7">7</button>
+                        <button class="calc-btns" data-number="8">8</button>
+                        <button class="calc-btns" data-number="9">9</button>
+                        <button class="calc-buttons" data-operator="÷">÷</button>
+                    </div>
+
+                    <div class="row">
+                        <button class="calc-btns" data-number="4">4</button>
+                        <button class="calc-btns" data-number="5">5</button>
+                        <button class="calc-btns" data-number="6">6</button>
+                        <button class="calc-btns" data-operator="*">*</button>
+                    </div>
+
+                    <div class="row">
+                        <button class="calc-btns" data-number="1">1</button>
+                        <button class="calc-btns" data-number="2">2</button>
+                        <button class="calc-btns" data-number="3">3</button>
+                        <button class="calc-btns" data-operator="-">-</button>
+                    </div>
+                    
+                    <div class="row">
+                        <button class="calc-btns" data-number="0">0</button>
+                        <button class="calc-btns" id="point-btn">.</button>
+                        <button class="calc-btns" data-operator="+">+</button>
+                        <button class="calc-btns" id="equal-btn">=</button>
                     </div>
                     
                 </div>
